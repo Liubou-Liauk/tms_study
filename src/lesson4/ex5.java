@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ex5 {
     public static void main(String[] args) {
-        int n = ;
+        int n = 1234;
         int a = n % 1000;
         int b = a % 100;
         int n4 = b % 10;
