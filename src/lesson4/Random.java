@@ -9,13 +9,13 @@ class rand {
         int x = rand.nextInt(4523);
         if (x % 10 == 1 || x == 1)
             System.out.println(x + " рубль");
-        else if (x % 10 == 0 || x % 10 >= 5 & x % 10 <= 19)
+        else if (x % 10 == 0 | x % 10 >= 5 & x % 10 <= 19 | x % 100 < 19)
             System.out.println(x + " рублей");
-        else if (x % 10 == 2 || x % 10 == 3 || x % 10 == 4)
+        else if (x % 10 == 2 | x % 10 == 3 | x % 10 == 4)
             System.out.println(x + " рубля");
 
 
-        // 0, 5-20 рублей,,,
+        // 0, 5-20 рублей,,,112-114
         //1 рубль, 21, 31 ,,,
         //2-4 рубля, 24, 33 ,,,
     }
