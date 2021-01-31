@@ -6,8 +6,8 @@ class rand {
     public static Random rand = new Random();
 
     public static void main(String[] args) {
-        int x = rand.nextInt(4523);
-        if (x % 10 == 1 || x == 1)
+        int x = rand.nextInt(11);
+        if (x % 100 == 1 || x == 1)
             System.out.println(x + " рубль");
         else if (x % 10 == 0 | x % 10 >= 5 & x % 10 <= 19 | x % 100 < 19)
             System.out.println(x + " рублей");
