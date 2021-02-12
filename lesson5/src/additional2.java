@@ -2,7 +2,7 @@ public class additional2 {
     public static void main(String[] args) {
         int cell = 1;
         for (int hours = 3; hours <= 25; hours = hours + 3) {
-            cell = cell * 2;
+            cell *= 2;
             System.out.println("In " + hours + " hours there will be " + cell + " cells");
         }
     }

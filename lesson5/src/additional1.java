@@ -4,7 +4,7 @@ public class additional1 {
         double finalDist = 0;
         for (int i = 0; i < 7; i++) {
             finalDist += distance;
-            distance = distance + (distance * 0.1);
+            distance *= 1.1;
         }
         System.out.println("The final distance for 7 days is  " + (int) finalDist);
     }

@@ -1,10 +1,11 @@
+package src;
+
 import java.util.Arrays;
 
 public class additional6 {
     public static void main(String[] args) {
-        int i;
-        for (i = 1; i <= 100; i++) {
-            if (i % 2 == 0)
+        for (int i = 0; i <= 100; i += 2) {
+            if (i > 0)
                 System.out.println(i);
         }
     }
