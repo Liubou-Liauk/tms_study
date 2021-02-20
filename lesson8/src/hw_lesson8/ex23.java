@@ -15,7 +15,7 @@ public class ex23 {
                 "   <p id=”p1”>По двадцать пять недель в туман уходит счёт векам.</p>\n" +
                 "   <p id=”p1”>>Летит мой звонкий балаган куда-то к облакам.</p>\n" +
                 "   <p id=”p1”><i>М. Щербаков</i></p>";
-        Pattern pattern = Pattern.compile("<p id=”p1”>");
+        Pattern pattern = Pattern.compile("<(\\\"[^\\\"]*\\\"|'[^']*'|[^'\\\">])*>");
         Matcher matcher = pattern.matcher(str);
         while (matcher.find()){
             System.out.println(str.replaceAll(String.valueOf(pattern), "<p>"));
