@@ -1,7 +1,7 @@
 package ex28;
 
 
-public class AllTypeofData<E extends Number> {
+public class AllTypeofData<E> {
     private E[] arrIndex;
 
     public E[] getArrIndex() {
